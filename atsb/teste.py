@@ -56,9 +56,9 @@ while s == 1:
         else:
             print("conta já vencida")
     elif resp == 3:
-        del_a = int(input("insira o numero da conta: "))
+        apag = int(input("insira o numero da conta: "))
         print('conta apagada!')
-        Cliente.apagar_conta(contas, del_a)
+        Cliente.apagar_conta(contas, apag)
         
     elif resp == 4:
         Cliente.mostrar_conta(contas)
