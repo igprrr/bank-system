@@ -5,11 +5,11 @@ from cliente import Cliente
 #classe do banco que faz transferencia
 class Banco:
     def transferencia(conta,contas):
-        transfer_b = int(input("insira o numero da conta para transferir: ")) 
+        transferir = int(input("insira o numero da conta para transferir: ")) 
         quantidade = int(input("insira quanto quer transferir: "))
         try:
             if conta.saldo_disponivel(quantidade):
-                contas[transfer_b].deposito(quantidade)
+                contas[transferir].deposito(quantidade)
                 conta.saca(quantidade)
             else:
                 print("Error")
